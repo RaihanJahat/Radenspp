@@ -50,4 +50,12 @@ public class modeldatabase {
             return false;
         }
     }
+
+    public ResultSet ambildata() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public boolean rubahData(String sql) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

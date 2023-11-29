@@ -6,6 +6,7 @@
 package mdinya;
 
 import javaa.aplikasi.spp.modelna.Kelas;
+import javaa.aplikasi.spp.modelna.Pembayaranspp;
 import javaa.aplikasi.spp.modelna.SPP;
 import javaa.aplikasi.spp.modelna.petugas;
 
@@ -13,12 +14,12 @@ import javaa.aplikasi.spp.modelna.petugas;
  *
  * @author Administrator
  */
-public class mdinya extends javax.swing.JFrame {
+public class mdinya1 extends javax.swing.JFrame {
 
     /**
      * Creates new form mdinya
      */
-    public mdinya() {
+    public mdinya1() {
         initComponents();
     }
 
@@ -60,7 +61,7 @@ public class mdinya extends javax.swing.JFrame {
         });
         menuBar.add(jMenu2);
 
-        jMenu3.setText("Petugas");
+        jMenu3.setText("Pembayaran");
         jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu3MouseClicked(evt);
@@ -78,7 +79,7 @@ public class mdinya extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
+            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
         );
 
         pack();
@@ -104,9 +105,9 @@ public class mdinya extends javax.swing.JFrame {
 
     private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
         // TODO add your handling code here:
-        petugas p = new petugas();
-        desktopPane.add(p);
-        p.setVisible(true);
+        Pembayaranspp po = new Pembayaranspp();
+        desktopPane.add(po);
+        po.setVisible(true);
     }//GEN-LAST:event_jMenu3MouseClicked
 
     /**
@@ -126,20 +127,21 @@ public class mdinya extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(mdinya.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mdinya1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(mdinya.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mdinya1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(mdinya.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mdinya1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(mdinya.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mdinya1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new mdinya().setVisible(true);
+                new mdinya1().setVisible(true);
             }
         });
     }

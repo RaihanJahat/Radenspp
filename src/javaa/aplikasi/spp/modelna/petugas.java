@@ -33,15 +33,15 @@ private void muattabel() {
 
         modeldatabase md = new modeldatabase();
 
-        ResultSet rs = md.ambildata(sql);
+        ResultSet rsud = md.ambildata(sql);
         try {
-            while (rs.next()) {
+            while (rsud.next()) {
                Vector baris = new Vector();
-               baris.add(rs.getInt("id_petugas"));
-               baris.add(rs.getString("username"));
-               baris.add(rs.getString("password"));
-               baris.add(rs.getString("nama_petugas"));
-               baris.add(rs.getString("level"));
+               baris.add(rsud.getInt("id_petugas"));
+               baris.add(rsud.getString("username"));
+               baris.add(rsud.getString("password"));
+               baris.add(rsud.getString("nama_petugas"));
+               baris.add(rsud.getString("level"));
                kp.addRow(baris);
             }
         } catch (SQLException ex) {
@@ -274,7 +274,7 @@ private void muattabel() {
         String k = np.getText();
         String l = (String) bo.getSelectedItem();
         
-        String sql = "insert into spp(username,password,nama_petugas,level) values('"+pk+"','"+pp+"','"+k+"','"+l+"')";
+        String sql = "insert into petugas(username,password,nama_petugas,level) values('"+pk+"','"+pp+"','"+k+"','"+l+"')";
         
         modeldatabase md = new modeldatabase();
         if(md.rubahdata(sql)){
